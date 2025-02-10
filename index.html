@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nayeem Tach</h1>
+        <button onclick="openCheckout()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <section id="product-list"></section>
+
+    <!-- 🛒 Checkout Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <h2>Checkout</h2>
+            <div class="checkout-items"></div>
+            <p><strong>Total:</strong> $<span id="checkout-total">0</span></p>
+            <button id="confirm-checkout-btn">Confirm Checkout</button>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- 🧾 Receipt Modal -->
+    <div class="receipt-modal">
+        <div class="receipt-content">
+            <h2>Order Receipt</h2>
+            <p><strong>Order ID:</strong> <span id="order-id"></span></p>
+            <p><strong>Date:</strong> <span id="order-date"></span></p>
+            <div class="receipt-items"></div>
+            <p><strong>Total:</strong> $<span id="receipt-total"></span></p>
+            <button id="print-receipt-btn">Print Receipt</button>
+            <button id="close-receipt-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
