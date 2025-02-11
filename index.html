@@ -10,7 +10,10 @@
 
     <header>
         <h1>Nayeem Tach</h1>
-        <button onclick="openCheckout()">🛒 Cart (<span id="cart-count">0</span>)</button>
+        <div class="cart-container">
+            <button onclick="openCheckout()">🛒 Cart (<span id="cart-count">0</span>)</button>
+            <button id="clear-cart-btn">Clear Cart</button>
+        </div>
     </header>
 
     <section id="product-list"></section>
