@@ -123,3 +123,10 @@ document.getElementById("print-receipt-btn").addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", displayProducts);
+
+// 🆕 Clear Cart ফিচার
+document.getElementById("clear-cart-btn").addEventListener("click", () => {
+    cart = [];  // Empty the cart
+    updateCart();
+    alert("Cart has been cleared!");
+});
