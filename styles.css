@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 30px;
 }
 
 button {
@@ -20,6 +21,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    margin-left: 10px; /* Add space between buttons */
 }
 
 button:hover {
@@ -66,6 +68,7 @@ button:hover {
     width: 400px;
     text-align: center;
 }
+
 /* Receipt Modal */
 .receipt-content {
     background: #fff;
@@ -107,4 +110,13 @@ button:hover {
 
 #print-receipt-btn:hover, #close-receipt-btn:hover {
     background: #444;
+}
+
+/* Add margin-left to the Clear Cart button for spacing */
+#clear-cart-btn {
+    background: #dc3545;
+}
+
+#clear-cart-btn:hover {
+    background: #c82333;
 }
